@@ -1,0 +1,480 @@
+:root {
+    --color-red: #d03b40;
+    --color-beige: #ded6c0;
+    --color-white: #f5f0ed;
+    --color-gray: #241d1b;
+    --text-dark: #3c3c3b;
+    --text-clear: #f5f0ed;
+    --font-header1: 44px;
+    --font-header2: 28px;
+    --font-header3: 24px;
+    --font-body-text: 16px;
+    --font-buttons: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    font-size:var(--font-body-text);
+}
+
+h1 {
+    font-size: var(--font-header1);
+}
+
+h2 {
+    font-size: var(--font-header2);
+}
+
+h3 {
+    font-size: var(--font-header3);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-clear);
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.bg-home {
+    min-height: 100vh;
+    width: 100%;
+    background: url(/assets/fundo/Fondo1.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+
+/* .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu img {
+    padding: 20px;
+} */
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    /* width: 600px;
+    height: 50px; */
+    
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#menu-list {
+    list-style: none;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+    margin: 0;
+    padding: 0;
+    color: var(--color-white);
+    font-size: var(--font-body-text);
+    text-align: center;
+    /* width: 600px;
+    height: 50px; */
+    /* padding: 20px; margem direita */
+}
+
+li {
+    /* width: 120px;
+    height: 50px; */
+    padding: 1em;
+    font-size: var(--font-body-text);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-home {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-white);
+    text-align: center;
+    
+}
+
+.content-home h1 {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.horizontal-line {
+    width: 90px;
+    margin: 0 auto;
+}
+
+.content-home p {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.content-2 {
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* min-height: 400px; */
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+} 
+
+.block-1 {
+    /* max-height: 280px; */
+    min-height: 400px;
+    background-color: var(--color-red);
+    color: var(--color-beige);
+    padding: 50px 60px 50px 60px;
+    /* padding: 163px 120px; */
+    /* align-self: stretch; */
+    /* min-height: 50vh; */
+    /* box-sizing: border-box; */
+    /* align-content: center; */
+    /* justify-content: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 
+.block-1 h2 {
+    margin: 120 auto;
+}
+
+.block-1 p {
+    margin: 0 auto;
+} */
+
+
+/* .block-1 h2 {
+    width: 250px;
+}
+
+.block-1 p {
+    width: 250px;
+} */
+
+.block-2 {
+    /* max-height: 400px; */
+    min-height: 400px;
+    /* width: 50%; */
+    /* text-align: center; */
+    color: var(--color-red);
+    background-color: var(--color-beige);
+    /* align-self: stretch; */
+    padding: 50px 60px 50px 60px;
+    /* box-sizing: border-box; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-2 h2 {
+    margin: 0 auto;
+}
+
+.block-2 p {
+    margin: 0 auto;
+}
+
+.content-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: url(/assets/fundo/Fondo2.jpg) no-repeat;
+    background-size: cover;
+    color: var(--color-white);
+    min-height: 420px;
+    width: 100%;
+    /* padding: 50px; */
+}
+
+.content-3 div button {
+    color: var(--color-beige);
+    background: transparent;
+    padding: 12px 20px;
+    border: 4px solid var(--color-white);
+    font-weight: bold;
+    font-size: var(--font-buttons);
+}
+
+.products {
+    display: grid;
+    grid-template-areas: "icon-bread bread icon-pie pie"
+                         "icon-sweet sweet icon-ingredients ingredients";
+    grid-gap: 30px;
+    /* line-height: 1.4; */
+    padding: 80px 20px;
+    color: var(--color-gray);
+    background: var(--color-white);
+}
+
+.elem1 {
+    grid-area: icon-bread;
+}
+
+.elem2 {
+    grid-area: icon-pie;
+}
+
+.elem3 {
+    grid-area: icon-sweet;
+}
+
+.elem4 {
+    grid-area: icon-ingredients;
+}
+
+
+.footer {
+    height: 220px;
+    color: var(--color-beige);
+    background-color: var(--color-gray);
+    display: flex;
+    align-items: center;
+}
+
+.footer p {
+    margin-left: 20px;
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+    .content-2 {   
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .block-1 {
+        min-height: 280px;
+    }
+
+    .block-2 {
+        min-height: 280px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-areas: "icon-bread bread"
+                             "icon-pie pie"
+                             "icon-sweet sweet"
+                             "icon-ingredients ingredients";
+    }
+}
+
+@media (max-width: 860px) {
+    /* #btn-mobile {
+        display: block;
+    } */
+    #menu-list {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 110px;
+        right: 0px;
+        /* left: 220px; */
+        background-color: var(--color-red);
+        display: block;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu-list {
+        height: calc(80vh - 70px);
+        visibility: visible;
+        /* overflow-y: auto; */
+        padding-top: 110px;
+    }
+
+    #menu-list li a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--color-beige)
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem .1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+
+    #hamburger {
+        border-top: 10px solid;
+        width: 60px;
+        /* background: var(--color-red); */
+        background: transparent;
+        color: var(--color-beige);
+        /* color: var(--color-red); */
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 10px;
+        background: currentColor;
+        margin-top: 10px;
+        /* margin-bottom: 3px; */
+        transition: .1s;
+        position: relative;
+        
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -20px;
+    }
+
+    .menu img {
+        width: 190px;
+        height: 55px;
+    }
+
+    .menu {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+}
+    
+@media (max-width: 600px) {
+    .content-2 {   
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .block-1 {
+        min-height: 280px;
+    }
+
+    .block-2 {
+        min-height: 280px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-areas:    "icon-bread"
+                                "bread"
+                                "icon-pie"
+                                "pie"
+                                "icon-sweet" 
+                                "sweet"
+                                "icon-ingredients" 
+                                "ingredients";
+    }
+
+    .icon-bread {
+        place-self: center;
+    }
+    
+    .icon-bread img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .icon-pie {
+        place-self: center;
+    }
+    
+    .icon-pie img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .icon-sweet {
+        place-self: center;
+    }
+
+    .icon-sweet img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon-ingredients {
+        place-self: center;
+    }
+
+    .icon-ingredients img {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    h1 {
+        font-size: var(--font-header2);
+    }
+    
+    h2 {
+        font-size: var(--font-header3);
+    }
+
+    .content-3 div button {
+        padding: 12px 90px;
+        margin: 0 20px;
+    }
+
+    .content-home p {
+        padding-right: 50px;
+    }
+}
