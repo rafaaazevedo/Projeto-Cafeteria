@@ -1,8 +1,8 @@
 # Projeto Cafeteria
 
-Aplicação de uma cafeteria para estudo da responsividade.
+Projeto web de uma cafeteria fictícia, desenvolvida para estudo. O objetivo é reproduzir o design em um formato responsivo (versão desktop e mobile).
 
-### Versão web
+### Versão desktop
 
 ![Projeto Cafeteria](assets/home.png "Projeto Cafeteria")
 
